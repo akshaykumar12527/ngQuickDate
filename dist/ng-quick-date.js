@@ -105,6 +105,7 @@
           };
           datepickerClicked = false;
           window.document.addEventListener('click', function(event) {
+            console.log("clicked", event.target)
             if (scope.calendarShown && !datepickerClicked) {
               scope.toggleCalendar(false);
               scope.$apply();
